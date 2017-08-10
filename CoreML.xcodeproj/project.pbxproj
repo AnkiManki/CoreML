@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		9D0CDC021F3C8C7700AD35D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0CDC011F3C8C7700AD35D6 /* AppDelegate.swift */; };
-		9D0CDC041F3C8C7700AD35D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0CDC031F3C8C7700AD35D6 /* ViewController.swift */; };
+		9D0CDC041F3C8C7700AD35D6 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0CDC031F3C8C7700AD35D6 /* CameraVC.swift */; };
 		9D0CDC071F3C8C7700AD35D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D0CDC051F3C8C7700AD35D6 /* Main.storyboard */; };
 		9D0CDC091F3C8C7700AD35D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D0CDC081F3C8C7700AD35D6 /* Assets.xcassets */; };
 		9D0CDC0C1F3C8C7700AD35D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D0CDC0A1F3C8C7700AD35D6 /* LaunchScreen.storyboard */; };
+		9D0CDC171F3C906900AD35D6 /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0CDC161F3C906900AD35D6 /* RoundedShadowView.swift */; };
+		9D0CDC191F3C948800AD35D6 /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0CDC181F3C948800AD35D6 /* RoundedShadowButton.swift */; };
+		9D0CDC1B1F3C94E200AD35D6 /* RoundedShadowImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0CDC1A1F3C94E200AD35D6 /* RoundedShadowImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9D0CDBFE1F3C8C7700AD35D6 /* CoreML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreML.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D0CDC011F3C8C7700AD35D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9D0CDC031F3C8C7700AD35D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9D0CDC031F3C8C7700AD35D6 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		9D0CDC061F3C8C7700AD35D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D0CDC081F3C8C7700AD35D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D0CDC0B1F3C8C7700AD35D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D0CDC0D1F3C8C7700AD35D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D0CDC161F3C906900AD35D6 /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
+		9D0CDC181F3C948800AD35D6 /* RoundedShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
+		9D0CDC1A1F3C94E200AD35D6 /* RoundedShadowImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,49 @@
 		9D0CDC001F3C8C7700AD35D6 /* CoreML */ = {
 			isa = PBXGroup;
 			children = (
-				9D0CDC011F3C8C7700AD35D6 /* AppDelegate.swift */,
-				9D0CDC031F3C8C7700AD35D6 /* ViewController.swift */,
+				9D0CDC1C1F3C95CE00AD35D6 /* Utilities */,
+				9D0CDC151F3C8D1F00AD35D6 /* Resources */,
+				9D0CDC141F3C8D0E00AD35D6 /* View */,
+				9D0CDC131F3C8D0700AD35D6 /* Controller */,
 				9D0CDC051F3C8C7700AD35D6 /* Main.storyboard */,
-				9D0CDC081F3C8C7700AD35D6 /* Assets.xcassets */,
-				9D0CDC0A1F3C8C7700AD35D6 /* LaunchScreen.storyboard */,
 				9D0CDC0D1F3C8C7700AD35D6 /* Info.plist */,
 			);
 			path = CoreML;
+			sourceTree = "<group>";
+		};
+		9D0CDC131F3C8D0700AD35D6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9D0CDC031F3C8C7700AD35D6 /* CameraVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9D0CDC141F3C8D0E00AD35D6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9D0CDC161F3C906900AD35D6 /* RoundedShadowView.swift */,
+				9D0CDC181F3C948800AD35D6 /* RoundedShadowButton.swift */,
+				9D0CDC1A1F3C94E200AD35D6 /* RoundedShadowImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9D0CDC151F3C8D1F00AD35D6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9D0CDC1C1F3C95CE00AD35D6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9D0CDC011F3C8C7700AD35D6 /* AppDelegate.swift */,
+				9D0CDC081F3C8C7700AD35D6 /* Assets.xcassets */,
+				9D0CDC0A1F3C8C7700AD35D6 /* LaunchScreen.storyboard */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D0CDC041F3C8C7700AD35D6 /* ViewController.swift in Sources */,
+				9D0CDC041F3C8C7700AD35D6 /* CameraVC.swift in Sources */,
 				9D0CDC021F3C8C7700AD35D6 /* AppDelegate.swift in Sources */,
+				9D0CDC171F3C906900AD35D6 /* RoundedShadowView.swift in Sources */,
+				9D0CDC191F3C948800AD35D6 /* RoundedShadowButton.swift in Sources */,
+				9D0CDC1B1F3C94E200AD35D6 /* RoundedShadowImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +319,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U52X69UCNJ;
 				INFOPLIST_FILE = CoreML/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stefanmarkovic.CoreML;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,6 +334,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U52X69UCNJ;
 				INFOPLIST_FILE = CoreML/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stefanmarkovic.CoreML;
 				PRODUCT_NAME = "$(TARGET_NAME)";
